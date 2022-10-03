@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "WILDEMOUNT",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/Khhtec8lg8oq7Uc94mpH9yhIpQ1j4ugEsNfpBIIUbXciWHsD49",
+  "gitHubUrl": "https://github.com/aquamanly/Personal-Shop",
+  "workFolder": "_work"
+}
