@@ -1,0 +1,54 @@
+<p>products-add works!</p>
+<h1 *ngIf="addProduct.pName">{{addProduct.pName}} </h1>
+
+<div class="container">
+   <!--
+    export class Product {
+    pId!: number;
+    pName = "";
+    pCategory= "";
+    pPrice= "";
+    pIsInStock= true;
+  }
+  
+   -->
+
+        <div class="row">
+            <div class="col-6">
+                <form #form="ngForm" (ngSubmit)="addProductFunction()">
+                <div class="mb-3">
+                    <label for="id" class="form-label">ID</label>
+                    <input type="text" class="form-control" id="id"
+                    name="pId"
+                    [(ngModel)]="addProduct.pId">
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" 
+                    name="pName"
+                    [(ngModel)]="addProduct.pName">
+                </div>
+                <div class="mb-3">
+                    <label for="Category" class="form-label">Category</label>
+                    <input type="text" class="form-control" id="Category" 
+                    name="pCategory"
+                    [(ngModel)]="addProduct.pCategory">
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="text" class="form-control" id="price"  
+                    name="pPrice"
+                    [(ngModel)]="addProduct.pPrice">
+                </div>
+                <div class="mb-3">
+                    <label for="stock" class="form-label">In Stock</label>
+                    <input type="checkbox" class="form-control" id="stock"
+                    name="pIsInStock"
+                    [(ngModel)]="addProduct.pIsInStock">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+</div>

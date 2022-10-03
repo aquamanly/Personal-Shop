@@ -1,0 +1,9 @@
+<table>
+    <tbody>
+        <tr *ngFor="let item of Products">
+            <td>{{item.pId}}</td>
+            <td>{{item.pName}}</td>
+            <a [routerLink]="['/show', 'edit', item.pId]">Edit</a>
+        </tr>
+    </tbody>
+</table>
